@@ -1,0 +1,163 @@
+@font-face {
+  font-family: "Omnes";
+  src: local('Omnes Regular'), url('../fonts/omnes-regular-webfont.woff') format('woff');
+}
+
+body {
+	font-family: "Omnes";
+}
+
+section#package {
+	width: 100%;
+	max-height: 100%;
+	margin-top: 35px;
+	
+	p {
+		margin-bottom: 25px;
+		font-size: 24px;
+  		font-weight: 700;
+	}
+	
+	ul#package_photos {
+		list-style: none;
+		width: 100%;
+		margin-top: 0px;
+		padding: 0;
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-ms-flex-wrap: wrap;
+		    flex-wrap: wrap;
+		-webkit-box-pack: center;
+		    -ms-flex-pack: center;
+		        justify-content: center;
+	}
+
+	ul {
+		.item {
+			width: 320px;
+			height: 290px;
+			display: -webkit-box;
+			display: -ms-flexbox;
+			display: flex;
+			-webkit-box-align: end;
+			    -ms-flex-align: end;
+			        align-items: flex-end;
+			-webkit-box-pack: justify;
+			    -ms-flex-pack: justify;
+			        justify-content: space-between;
+			-ms-flex-wrap: wrap;
+			    flex-wrap: wrap;
+			padding: 0 20px;
+			background-color: #f1803c;
+			margin: 10px;
+			border: solid 1px #fff;
+			border-radius: 5px;
+		}
+		
+		li {
+			/*photo caption*/
+			span {
+				color: #ffffff;
+				text-shadow: 1px 0px 1px #000;
+			}
+
+			.country {
+				text-transform: uppercase;
+				margin-top: 67%;
+			}
+
+			.price {
+				font-size: 25px !important;
+			}
+
+			.country, .description {
+				width: 60%;
+			}
+
+			.price, .price_caption {
+				width: 30%;
+				text-align: right;
+			}
+
+			.price, .description {
+				font-size: 22px;
+				margin-bottom: 15px;
+				font-weight: 600;
+			}
+			/*end of photo caption*/
+		}
+
+		/*Places*/
+		%photo_pattern {
+			background-position: center;
+			background-size: cover;
+		}
+
+		li.rio_de_janeiro {
+		 	background-image: url("../img/rio_de_janeiro.svg");
+		 	@extend %photo_pattern;
+		 	background-position: 45% 40%;
+		}
+
+		li.sao_paulo {
+		 	background-image: url("../img/sao_paulo.svg");
+		 	@extend %photo_pattern;
+		}
+
+		li.salvador {
+			background-image: url("../img/salvador.svg");
+		 	@extend %photo_pattern;
+		}
+
+		li.porto_de_galinhas {
+			background-image: url("../img/porto_de_galinhas.svg");
+			@extend %photo_pattern;
+		}
+
+		li.praia_do_forte {
+			background-image: url("../img/praia_do_forte.svg");
+			@extend %photo_pattern;
+		}
+
+		li.gramado {
+			background-image: url("../img/gramado.svg");
+			@extend %photo_pattern;
+		}
+
+		li.estados_unidos {
+			background-image: url("../img/estados_unidos.svg");
+			@extend %photo_pattern;
+			background-position: 70% 50%;
+		}
+
+		li.orlando {
+			background-image: url("../img/estados_unidos_orlando.svg");
+			@extend %photo_pattern;
+		}
+
+		li.inglaterra {
+			background-image: url("../img/inglaterra.svg");
+			@extend %photo_pattern;
+		}
+
+		li.paris {
+			background-image: url("../img/paris.svg");
+			@extend %photo_pattern;
+		}
+
+		li.argentina {
+			background-image: url("../img/argentina.svg");
+			@extend %photo_pattern;
+		}
+
+		li.indonesia {
+			background-image: url("../img/indonesia.svg");
+			@extend %photo_pattern;
+		}
+		/*End places*/	
+	}
+}
+
+// Responsive design
+@import 'responsive.scss'

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title></title>
+	<link rel="stylesheet" href="src/css/style.css">
+	<script>
+		function space_p() {
+			if(window.screen.availWidth > 600){
+				p = document.getElementById('first');
+				pos = p.getBoundingClientRect();
+				document.getElementsByClassName('p')[0].style="margin-left: " + (pos.left-8) + "px; transition: 0.6s;"
+				document.getElementsByClassName('p')[1].style="margin-left: " + (pos.left-8) + "px; transition: 0.6s;"
+			}
+		}
+		window.onresize = function(){ space_p(); }
+		window.onload = function(){ space_p(); }
+	</script>
+</head>
+<body>
+	<section id="package">
+		<p class="p">Vamos pra uma praia do Brasil?</p>
+		<ul id="package_photos">		
+			<li class="rio_de_janeiro item" id="first">
+				<span class="country">Brasil</span>
+				<span class="price_caption">a partir de</span>
+				<span class="description">Rio de Janeiro</span>
+				<span class="price">R$ 59</span>	
+			</li>
+			<li class="sao_paulo item">
+				<span class="country">Brasil</span>
+				<span class="price_caption">a partir de</span>
+				<span class="description">São Paulo</span>
+				<span class="price">R$ 69</span>	
+			</li>
+			<li class="salvador item">
+				<span class="country">Brasil</span>
+				<span class="price_caption">a partir de</span>
+				<span class="description">Salvador</span>
+				<span class="price">R$ 49</span>	
+			</li>
+			<li class="porto_de_galinhas item">
+				<span class="country">Brasil</span>
+				<span class="price_caption">a partir de</span>
+				<span class="description">Porto de Galinhas</span>
+				<span class="price">R$ 69</span>	
+			</li>
+			<li class="praia_do_forte item">
+				<span class="country">Brasil</span>
+				<span class="price_caption">a partir de</span>
+				<span class="description">Praia do Forte</span>
+				<span class="price">R$ 49</span>	
+			</li>
+			<li class="gramado item">
+				<span class="country">Brasil</span>
+				<span class="price_caption">a partir de</span>
+				<span class="description">Gramado</span>
+				<span class="price">R$ 79</span>	
+			</li>
+		</ul>
+		<p class="p">Vamos viajar pelo mundo?</p>
+		<ul id="package_photos">
+			<li class="estados_unidos item" id="first">
+				<span class="country">Estados Unidos</span>
+				<span class="price_caption">a partir de</span>
+				<span class="description">Hospedagem de 8 dias e 8 noites</span>
+				<span class="price">R$ 1259</span>	
+			</li>
+			<li class="orlando item">
+				<span class="country">Estados Unidos</span>
+				<span class="price_caption">a partir de</span>
+				<span class="description">Orlando</span>
+				<span class="price">R$ 969</span>	
+			</li>
+			<li class="inglaterra item">
+				<span class="country">Inglaterra</span>
+				<span class="price_caption">a partir de</span>
+				<span class="description">Passagem Aérea</span>
+				<span class="price">R$ 1649</span>	
+			</li>
+			<li class="paris item">
+				<span class="country">Paris</span>
+				<span class="price_caption">a partir de</span>
+				<span class="description">Hospedagem de 4 dias e 4 noites</span>
+				<span class="price">R$ 59</span>	
+			</li>
+			<li class="argentina item">
+				<span class="country">Argentina</span>
+				<span class="price_caption">a partir de</span>
+				<span class="description">Passeio no templo de Danilo</span>
+				<span class="price">R$ 69</span>	
+			</li>
+			<li class="indonesia item">
+				<span class="country">Indonésia</span>
+				<span class="price_caption">a partir de</span>
+				<span class="description">Passagem Aérea</span>
+				<span class="price">R$ 49</span>	
+			</li>
+		</ul>
+	</section>
+</body>
+</html>
