@@ -117,7 +117,9 @@ section#package {
     text-transform: uppercase;
     margin-top: 83%; }
   section#package ul li span.price, section#package ul li span.description {
-    font-size: 16px; }
+    font-size: 20px; }
+  section#package ul li span.price {
+    font-size: 21px; }
 
   ::-webkit-scrollbar {
     width: 0px;
