@@ -1,0 +1,280 @@
+html {
+	font-size: 15px;
+}
+
+/*Estilo bloco bemvindo*/
+.bemvindo {
+	background: url("../images/fundo-bem-vindo.jpg");
+	background-size: cover;
+	height: 100vh;
+	overflow: hidden;
+
+}
+
+/*Estilo saudação ityped*/
+/*.texto-bemvindo {
+	position: relative;
+	display: block;
+	margin-top: calc((100vh - 257px) / 2);
+}*/
+
+.bemvindo h1 {
+	font-size: 3.3em;
+	font-weight: 500;
+}
+
+.bemvindo h2 {
+	font-size: 1.1em;
+	margin-top: 1.5rem;
+	margin-bottom: 1.8rem;
+	font-weight: 100;
+}
+
+.ityped {
+	font-weight: 600;
+}
+
+.fixed-top {
+	background: rgba(0, 0, 0, 0.75);
+}
+
+.navbar-light .navbar-brand {
+    color: #ffffff;
+    font-size: 1.3rem;
+    /*text-transform: uppercase;*/
+}
+
+.navbar-light .navbar-brand:hover {
+    color: #ffffff;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: #ffffff;
+    padding-left: .4rem;
+    margin-left: .2rem;
+}
+
+.navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover {
+    color: #ffffff;
+    background: #f05f40;
+}
+
+.navbar-light .navbar-brand:focus, .navbar-light .navbar-brand:hover, .navbar-light .navbar-toggler:focus, .navbar-light .navbar-toggler:hover {
+    color: #fff;
+}
+
+/*Animação Scrollspay menu*/
+.navbar-light .navbar-nav .active > .nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.open, .navbar-light .navbar-nav .open > .nav-link {
+    color: #ffffff;
+    background: #f05f40;
+}
+
+.x {
+	padding-top: 37px;
+}
+
+.bemvindo .fa {
+	color: #ffffff;
+	font-size: 2rem;	
+}
+
+.texto-bemvindo {
+	color: #ffffff;
+	margin-top: 9rem;
+}
+
+.btn-primary {
+	background-color: #F05F40;
+	border-color: #b93e24;
+	transition: all .5s ease;
+	text-transform: uppercase;
+}
+
+.btn-primary:hover {
+	background: #f17f66;
+	border-color: #F05F40;
+}
+
+/*Estilos Iframe*/
+#close {
+	position: absolute;
+	left: 86%;
+	color: #ffffff;
+	background: rgba(0,0,0,.8);
+	font-size: 35pt;
+	padding: 5px;
+	padding-left: 14px;
+	padding-right: 14px;
+	cursor: pointer;
+	transition: background .5s;
+	opacity: 0;
+}
+
+#close:hover {
+	background: rgba(0,0,0,1);
+}
+
+#curriculo {
+	position: absolute;
+	left: 15%;
+	-webkit-transform: scale(1,0);
+	-moz-transform: scale(1,0);
+	-ms-transform: scale(1,0);
+	-o-transform: scale(1,0);
+	transform: scale(1,0);
+	-webkit-transition: transform .5s;
+	-moz-transition: transform .5s;
+	-ms-transition: transform .5s;
+	-o-transition: transform .5s;
+	transition: transform .5s;
+	width: 70%;
+	height: 100%;
+	border: none;
+	z-index: 9998;
+}
+
+/*Estilos bloco quem somos*/
+
+.quem-somos {
+	background: #f05f40;
+	color: #ffffff;
+	margin: 0 auto;
+}
+
+/*Estilos bloco serviços*/
+
+.servicos .fa {
+	color: #f05f40;
+	font-size: 6rem;
+}
+
+.servicos h3 {
+	font-weight: bold;
+}
+
+/*Estilos bloco portfolio*/
+
+.portfolio {
+	background: #424141;
+	color: #ffffff;	
+}
+
+.portfolio a {
+	display: block;
+	overflow: hidden;
+	margin-bottom: 1.5rem;
+}
+
+.portfolio img {
+	transition: all .3s ease;
+	min-width: 100%;
+}
+
+.portfolio a:hover img {
+	transform: scale(1.5);
+}
+
+/*Estilos Footer*/
+
+footer {
+	color: #ffffff;
+	background: #222222;
+}
+
+/*Estilos ityped */
+
+.ityped-cursor {
+    font-size: 1.1rem;
+    opacity: 1;
+    -webkit-animation: blink 0.3s infinite;
+    -moz-animation: blink 0.3s infinite;
+    animation: blink 0.3s infinite;
+    animation-direction: alternate;
+}
+
+@keyframes blink {
+    100% {
+        opacity: 0;
+    }
+}
+
+@-webkit-keyframes blink {
+    100% {
+        opacity: 0;
+    }
+}
+
+@-moz-keyframes blink {
+    100% {
+        opacity: 0;
+    }
+}
+
+.finished {
+	/*display: none;*/
+	opacity: 0;
+}
+
+/*A partir de 768px*/
+
+@media(min-width: 768px){
+	
+	html {
+		font-size: 16px;
+	}
+	
+	.bemvindo {
+		background: url("../images/fundo-bem-vindo-grande.jpg");
+		background-size: cover;
+	}
+
+	#menuprincipal {
+		overflow: hidden;
+	}
+
+	/*Estilo saudação ityped*/
+	.texto-bemvindo {
+		position: relative;
+		display: block;
+		margin-top: calc((100vh - 257px) / 2);
+	}
+
+	.bemvindo h1 {
+		font-size: 4.6em;
+		font-weight: 500;
+	}
+
+	.bemvindo h2 {
+		font-size: 2.6em;
+		margin-top: 2rem;
+		margin-bottom: 3rem;
+		font-weight: 100;
+	}
+
+	.ityped {
+		font-weight: 600;
+	}
+
+	.ityped-cursor {
+		font-size: 2.6rem;
+	}
+}
+
+@media(max-width: 600px){
+	
+	#curriculo {
+		width: 100%;
+		left:0px;
+	}
+
+	#close {
+		left: 4%;
+		font-size: 15pt;
+		padding: 3px;
+		padding-left: 10px;
+		padding-right: 10px;
+		background: rgba(0,0,0,.8);
+		z-index: 9999;
+	}
+
+}
