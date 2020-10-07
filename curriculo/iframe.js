@@ -1,6 +1,6 @@
 window.addEventListener("load", function() {
   if(detectmob.call() || tela < 600){
-		document.getElementById("curriculo").src="http://docs.google.com/gview?a=v&pid=explorer&chrome=false&api=true&embedded=true&srcid=124Cf3AIQV31TFaaGNv5EWshxs5FCa7zl&hl=en&embedded=true";
+		document.getElementById("curriculo").src="https://docs.google.com/gview?a=v&pid=explorer&chrome=false&api=true&embedded=true&srcid=124Cf3AIQV31TFaaGNv5EWshxs5FCa7zl&hl=en&embedded=true";
 	}else{
 		document.getElementById("curriculo").src="curriculo/Curriculo_Daniel_Lopes.pdf";
 	}
