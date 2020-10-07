@@ -1,4 +1,5 @@
 window.addEventListener("load", function() {
+	console.log('iframe CV')
   if(detectmob.call() || tela < 600){
 		document.getElementById("curriculo").src="https://docs.google.com/gview?a=v&pid=explorer&chrome=false&api=true&embedded=true&srcid=124Cf3AIQV31TFaaGNv5EWshxs5FCa7zl&hl=en&embedded=true";
 	}else{
@@ -9,7 +10,7 @@ window.addEventListener("load", function() {
 var tela = window.innerWidth;
 
 function detectmob() { 
- if( navigator.userAgent.match(/Android/i)
+if( navigator.userAgent.match(/Android/i)
  	|| navigator.userAgent.match(/webOS/i)
  	|| navigator.userAgent.match(/iPhone/i)
  	|| navigator.userAgent.match(/iPad/i)
