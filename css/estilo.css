@@ -8,15 +8,11 @@ html {
 	background-size: cover;
 	height: 100vh;
 	overflow: hidden;
+	display: flex;
+    align-items: center;
+    justify-content: center;
 
 }
-
-/*Estilo saudação ityped*/
-/*.texto-bemvindo {
-	position: relative;
-	display: block;
-	margin-top: calc((100vh - 257px) / 2);
-}*/
 
 .bemvindo h1 {
 	font-size: 3.3em;
@@ -80,7 +76,6 @@ html {
 
 .texto-bemvindo {
 	color: #ffffff;
-	margin-top: 9rem;
 }
 
 .btn-primary {
