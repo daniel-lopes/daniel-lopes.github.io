@@ -1,12 +1,11 @@
-window.addEventListener("load", function() {
+function getURLCV() {
 	console.log('iframe js')
   if(detectmob.call() || tela < 600){
 		document.getElementById("curriculo").src="https://docs.google.com/gview?a=v&pid=explorer&chrome=false&api=true&embedded=true&srcid=124Cf3AIQV31TFaaGNv5EWshxs5FCa7zl&hl=en&embedded=true";
-		//document.getElementById("curriculo").src=""
 	}else{
 		document.getElementById("curriculo").src="curriculo/Curriculo_Daniel_Lopes.pdf";
 	}
-});
+};
 
 var tela = window.innerWidth;
 
@@ -26,6 +25,7 @@ function detectmob() {
 }
 
 function pdf(){
+	getURLCV();
 	document.getElementById("curriculo").style= "-webkit-transform: scale(1,1); -moz-transform: scale(1,1); -ms-transform: scale(1,1); -o-transform: scale(1,1); transform: scale(1,1);";
 	document.getElementById("close").style= "opacity: 1; z-index: 9999;";
 	if(tela > 600){
@@ -36,6 +36,7 @@ function pdf(){
 }
 
 function fechar(){
+	document.getElementById("curriculo").src="";
 	document.getElementById("curriculo").style= "-webkit-transform: scale(1,0); -moz-transform: scale(1,0); -ms-transform: scale(1,0); -o-transform: scale(1,0); transform: scale(1,0);";
 	document.getElementById("close").style= "opacity: 0; z-index: 0;";
 	document.getElementById("conteudo").style="height: 100vh;";
