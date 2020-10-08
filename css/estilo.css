@@ -94,18 +94,19 @@ html {
 	position: absolute;
 	left: 86%;
 	color: #ffffff;
-	background: rgba(0,0,0,.8);
+	background: rgb(255 5 5 / 1);
 	font-size: 35pt;
 	padding: 5px;
 	padding-left: 14px;
 	padding-right: 14px;
 	cursor: pointer;
 	transition: background .5s;
+	transition: font-size .5s;
 	opacity: 0;
 }
 
 #close:hover {
-	background: rgba(0,0,0,1);
+	font-size: 37pt;
 }
 
 #curriculo {
@@ -267,7 +268,6 @@ footer {
 		padding: 3px;
 		padding-left: 10px;
 		padding-right: 10px;
-		background: rgba(0,0,0,.8);
 		z-index: 9999;
 	}
 

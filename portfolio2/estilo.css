@@ -173,19 +173,20 @@
 		position: absolute;
 		left: 86%;
 		color: #ffffff;
-		background: rgba(0,0,0,.5);
+		background: rgb(255 5 5 / 1);
 		font-size: 35pt;
 		padding: 5px;
 		padding-left: 14px;
 		padding-right: 14px;
 		cursor: pointer;
 		transition: opacity .5s;
+		transition: font-size .5s;
 		opacity: 0;
 		z-index: 9999;
 	}
 
 	#close:hover {
-		background: rgba(0,0,0,.8);
+		font-size: 37pt;
 	}
 
 	#curriculo {
@@ -317,7 +318,6 @@
 			padding: 3px;
 			padding-left: 10px;
 			padding-right: 10px;
-			background: rgba(0,0,0,.8);
 			z-index: 9999;
 		}
 
